@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LinkedIn Profile Card — 5 estilos de fondo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 1120px; margin: 0 auto; padding: 28px 22px 90px; color: #20364b; background: #e5eaf0; }
+    header { max-width: 800px; margin-bottom: 36px; }
+    h1 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 8px; }
+    p { color: #49617a; line-height: 1.5; }
+    section { margin: 35px 0; }
+    h2 { font-size: 17px; font-weight: 700; margin: 0 0 14px; }
+    code { padding: 3px 6px; background: #d5dce6; border-radius: 4px; font-size: 13px; }
+    .dark { background: #0d1b30; border-radius: 16px; padding: 25px 14px; }
+    .dark h2 { color: white; }
+    footer { font-size: 12px; color: #52687e; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LinkedIn Profile Card · v2.0.0</h1>
+    <p>Una tarjeta configurable para enlazar un perfil de LinkedIn. No utiliza la API ni el badge oficial. Los nombres y enlaces de este ejemplo son ilustrativos.</p>
+  </header>
+
+  <section>
+    <h2>1. SVG geométrico incorporado <code>data-background="geometric"</code></h2>
+    <div data-linkedin-card data-name="Alex Rivera" data-role="Software Researcher · Open Source" data-affiliation="Research community" data-profile-url="https://www.linkedin.com/in/replace-with-your-username/" data-background="geometric"></div>
+  </section>
+  <section>
+    <h2>2. Blanco <code>data-background="white"</code></h2>
+    <div data-linkedin-card data-name="Alex Rivera" data-role="Software Researcher · Open Source" data-affiliation="Research community" data-profile-url="https://www.linkedin.com/in/replace-with-your-username/" data-background="white" data-card-width="610px"></div>
+  </section>
+  <section class="dark">
+    <h2>3. Transparente <code>data-background="transparent"</code></h2>
+    <div data-linkedin-card data-name="Alex Rivera" data-role="Software Researcher · Open Source" data-affiliation="Research community" data-profile-url="https://www.linkedin.com/in/replace-with-your-username/" data-background="transparent" data-text-color="#ffffff" data-muted-color="#c0cfe1" data-eyebrow-color="#67d4d9" data-border-color="#6b849b" data-shadow="false"></div>
+  </section>
+  <section>
+    <h2>4. Color sólido <code>data-background="color"</code></h2>
+    <div data-linkedin-card data-name="Alex Rivera" data-role="Software Researcher · Open Source" data-affiliation="Research community" data-profile-url="https://www.linkedin.com/in/replace-with-your-username/" data-background="color" data-background-color="#fff0db" data-card-padding="20px" data-affiliation-font-size="16px"></div>
+  </section>
+  <section>
+    <h2>5. SVG propio <code>data-background="svg"</code></h2>
+    <div data-linkedin-card data-name="Alex Rivera" data-role="Software Researcher · Open Source" data-affiliation="Research community" data-profile-url="https://www.linkedin.com/in/replace-with-your-username/" data-background="svg" data-background-svg-url="./background-example.svg" data-text-color="#ffffff" data-muted-color="#c8dcee" data-eyebrow-color="#67d4d9" data-accent-color="#0a66c2" data-border-color="#6986bc"></div>
+  </section>
+  <footer>Componente independiente de LinkedIn. Personaliza nombre, cargo, afiliación, URL y colores antes de publicarlo.</footer>
+  <script src="./linkedin-profile-card.js"></script>
+</body>
+</html>
